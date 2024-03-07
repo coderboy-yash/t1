@@ -38,7 +38,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import "aos/dist/aos.css";
 import Results from "./components/Result"
 import Home from "./pages/Home/Home"
-import ProtectedRoute from "./components/Route/ ProtectedRoute";
+// import ProtectedRoute from "./components/Route/ProtectedRoute";
 import { loadUser } from "./actions/userAction";
 import store from "./store";
 import { useSelector, useDispatch } from "react-redux"
