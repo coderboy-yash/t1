@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+.grad {
+  background: linear-gradient(180deg, #010711 43.75%, rgba(255, 255, 255, 0) 84.74%),
+linear-gradient(180deg, #EDEDED 11.58%, rgba(237, 237, 237, 0) 81.99%);
+}
+
+
+/* Add these styles in your CSS file or component-specific styles */
+.splide__pagination__page.is-active {
+  background-color: #122C5A; /* Change to your desired color */
+}
+
+.splide__pagination__page {
+  background-color: #122C5A; /* Change to your desired color for inactive dots */
+  border: 1px solid #a6a6a6;
+}
+
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideRight {
+  animation: slideRight 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out;
+}

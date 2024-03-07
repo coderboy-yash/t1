@@ -1,0 +1,19 @@
+.container {
+    grid-area: break;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        font-size: 2.2rem;
+        font-style: italic;
+        letter-spacing: 3px;
+    }
+}

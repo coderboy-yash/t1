@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container h1 {
+  color: white;
+  font-size: calc(1rem + 4px);
+  font-weight: 500;
+}
+.container .words {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.container .words p {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: calc(2rem - 6px);
+  font-weight: bold;
+  background: var(--main-color1);
+  border-radius: 4px;
+  color: white;
+}
+.container .words p:nth-child(odd) {
+  border: 1px solid var(--border-color);
+}
+.container .words p:nth-child(even) {
+  background: white;
+  color: #0477e8;
+}/*# sourceMappingURL=TestPageLeft.module.css.map */

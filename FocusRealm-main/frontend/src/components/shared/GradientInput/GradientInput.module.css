@@ -1,0 +1,21 @@
+.container {
+  background: var(--card-color);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  width: 100%;
+  color: white;
+  padding: 15px;
+  font-size: calc(1rem - 2px);
+  font-weight: 500;
+  outline: none;
+  transition: all 0.2s;
+}
+.container:focus {
+  border: 2px solid var(--btn-color);
+}
+.container::-moz-placeholder {
+  color: var(--font-color);
+}
+.container::placeholder {
+  color: var(--font-color);
+}/*# sourceMappingURL=GradientInput.module.css.map */

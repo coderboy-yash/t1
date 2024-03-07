@@ -1,0 +1,289 @@
+.container {
+  width: 100%;
+  padding: 20px 50px;
+  position: relative;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .container {
+    padding: 40px 20px;
+  }
+}
+.container h1 {
+  font-size: 24px;
+  color: white;
+  flex: 1;
+  cursor: pointer;
+}
+.container h1 span {
+  font-weight: 200;
+}
+.container .timer {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.container .timer h2 {
+  color: white;
+  font-style: italic;
+  text-transform: capitalize;
+}
+@media (max-width: 600px) {
+  .container .timer {
+    padding: 10px 20px;
+  }
+}
+.container .nav {
+  max-width: 300px;
+  flex: 1;
+  padding: 10px 20px;
+  background: var(--navbar-color);
+  border-radius: 50px;
+  animation: moveLeft 0.5s;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+@media (max-width: 650px) {
+  .container .nav {
+    display: none;
+  }
+}
+.container .nav .navIcon {
+  padding: 10px;
+  border: 2px solid #d3c3c3;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  cursor: pointer;
+}
+.container .nav .navIcon.active {
+  border: 2px solid rgb(99, 102, 106);
+}
+.container .nav .navIcon img {
+  width: 20px;
+  height: 20px;
+}
+.container .icon {
+  display: none;
+}
+@media (max-width: 650px) {
+  .container .icon {
+    display: block;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.navMenu {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  background-color: white;
+  top: 105%;
+  border-radius: 10px;
+  background: var(--nav-menu-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  animation: movedown 1s;
+  /* Firefox */
+}
+.navMenu form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.navMenu form div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.navMenu button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.076);
+  color: white;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.navMenu button:hover {
+  background-color: rgba(255, 255, 255, 0.291);
+}
+.navMenu label {
+  font-size: calc(1rem - 2px);
+  font-weight: bold;
+}
+.navMenu select,
+.navMenu input {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.076);
+  font-weight: 500;
+  transition: all 0.2s;
+  color: white;
+}
+.navMenu select option,
+.navMenu input option {
+  color: black;
+}
+.navMenu input::-webkit-outer-spin-button,
+.navMenu input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.navMenu input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container.light h1 {
+  font-weight: bold;
+}
+.container.light h1 span {
+  font-weight: "500";
+}
+.container.light .nav {
+  background: var(--navbar-color);
+}
+.container.light .nav div.active {
+  border-color: rgb(99, 102, 106);
+}
+.container.light .navMenu {
+  background: var(--nav-menu-color);
+}
+
+.mobileNav {
+  display: none;
+  position: relative;
+}
+@media (max-width: 650px) {
+  .mobileNav {
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    left: 20%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--nav-menu-color);
+    animation: slide 0.3s;
+    overflow: scroll;
+  }
+}
+.mobileNav .mobileNavIcon {
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+}
+.mobileNav .mobileNavMenu {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.mobileNav .mobileNavMenu button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.076);
+  font-weight: 500;
+  transition: all 0.2s;
+  color: white;
+}
+.mobileNav .mobileNavMenu .navMenu {
+  position: static;
+  background-color: white;
+  border-radius: 10px;
+  background: var(--nav-menu-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.ai {
+  position: absolute;
+  right: 0px;
+  z-index: 30;
+  bottom: 0px;
+  cursor: pointer;
+}
+.ai img {
+  width: 100px;
+}
+@media (max-width: 650px) {
+  .ai img {
+    width: 70px;
+  }
+}
+
+.aiblock {
+  position: absolute;
+  bottom: 130px;
+  border-radius: 20px;
+  right: 80px;
+  width: 40vw;
+  z-index: 30;
+}
+@media (max-width: 650px) {
+  .aiblock {
+    width: 60vw;
+    right: 50px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes movedown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

@@ -1,0 +1,99 @@
+.forth {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 35vw;
+  height: 35vw;
+  border-radius: 50%;
+}
+@media (max-width: 750px) {
+  .forth {
+    width: 45vh;
+    height: 45vh;
+  }
+}
+.forth .title {
+  margin: auto;
+  max-width: 700px;
+  text-align: center;
+  top: 20%;
+  max-width: 200px;
+  font-size: 22px;
+  position: absolute;
+}
+.forth .title label {
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+@media (max-width: 1100px) {
+  .forth .title {
+    font-size: large;
+    top: 20px;
+  }
+}
+@media (max-width: 750px) {
+  .forth .title {
+    font-size: small;
+    top: 50px;
+  }
+}
+.forth .container {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 29vw;
+  background: rgba(217, 217, 217, 0.08);
+  height: 29vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.forth .container .play {
+  width: 100%;
+  max-width: 3rem;
+  margin-top: 2rem;
+}
+.forth .container .play img {
+  width: 100%;
+  height: 3rem;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .forth .container .play {
+    max-width: 2rem;
+  }
+  .forth .container .play img {
+    height: 2rem;
+  }
+}
+.forth .container .settings {
+  margin-top: 20px;
+}
+@media (max-width: 750px) {
+  .forth .container {
+    width: 38vh;
+    height: 38vh;
+  }
+}
+.forth .container h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 5rem;
+  font-style: italic;
+  color: white;
+  letter-spacing: 4px;
+}
+@media (max-width: 1000px) {
+  .forth .container h1 {
+    font-size: 3rem;
+  }
+}
+
+.forth.light .container {
+  background: rgba(217, 217, 217, 0.392);
+}/*# sourceMappingURL=Timer.module.css.map */

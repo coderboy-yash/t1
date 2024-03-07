@@ -1,0 +1,22 @@
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    max-width: 600px;
+    margin: auto;
+
+    h1 {
+        font-size: calc(2rem - 6px);
+    }
+
+    p {
+        font-size: calc(1rem - 2px);
+        line-height: 26px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.719);
+    }
+}

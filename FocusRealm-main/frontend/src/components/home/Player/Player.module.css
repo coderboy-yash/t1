@@ -1,0 +1,59 @@
+.container {
+  width: 80%;
+  max-width: 400px;
+  position: absolute;
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.25) 6.39%;
+  mix-blend-mode: normal;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 50px;
+  bottom: 4%;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+  gap: 30px;
+  animation: moveIn 0.5s;
+}
+.container .info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.container .info h1 {
+  font-size: calc(1rem - 2px);
+}
+.container .info p {
+  font-size: calc(1rem - 4px);
+  color: rgba(255, 255, 255, 0.68);
+}
+.container .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .controls img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.container .controls img:nth-child(2) {
+  width: 15px;
+  height: 15px;
+}
+.container input {
+  width: 60px;
+}
+
+@keyframes moveIn {
+  0% {
+    bottom: -4%;
+  }
+  100% {
+    bottom: 4%;
+  }
+}/*# sourceMappingURL=Player.module.css.map */

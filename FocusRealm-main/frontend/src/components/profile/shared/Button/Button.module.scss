@@ -1,0 +1,50 @@
+.container {
+    background: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &.small {
+        width: 60%;
+        margin: auto;
+    }
+
+    &:hover {
+        background: transparent;
+    }
+
+    &.outline {
+        background: transparent;
+
+        &:hover {
+            background: var(--btn-color);
+        }
+    }
+
+    &.circular {
+        border-radius: 100px;
+    }
+
+    &.disable {
+        pointer-events: none;
+    }
+
+    &.noRadius {
+        border-radius: 0;
+    }
+
+    &:disabled {
+        opacity: 50%;
+    }
+
+    &.noEvents {
+        pointer-events: none;
+    }
+}

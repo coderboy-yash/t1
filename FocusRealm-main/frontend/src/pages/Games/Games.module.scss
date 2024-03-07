@@ -1,0 +1,68 @@
+.content {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contentHeading {
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 18px;
+        color: #eae7e7;
+    }
+
+    .contentWrapper {
+        margin-top: 50px;
+        width: 100%;
+        max-width: 1200px;
+        // background: linear-gradient(180deg, #0466e3 0%, #05d1ff 100%);
+        padding: 2px;
+        border-radius: 30px;
+
+        .games {
+            background: var(--games-color);
+            border-radius: 30px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 50px;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            
+            .game {
+                width: calc(33.33% - 20px); 
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+          width: calc(50% - 20px); 
+        }
+
+        @media (max-width: 576px) {
+          width: calc(100% - 20px);
+        }
+            }
+            
+        }
+    }
+}
+
+.container.light {
+    .contentWrapper {
+        background: rgba(255, 255, 255, 0.31);
+        backdrop-filter: blur(2px);
+        .games {
+            background: transparent;
+        }
+    }
+
+    .contentHeading {
+        font-weight: 500;
+    }
+}

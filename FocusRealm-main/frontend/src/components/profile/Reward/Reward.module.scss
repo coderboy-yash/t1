@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 100%;
+        max-width: 150px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.Popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+
+    img {
+        width: 100%;
+        max-width: 30%;
+    }
+
+    button {
+        max-width: 150px;
+        padding: 10px 20px;
+        background-color: aqua;
+        border: 0;
+        outline: 0;
+        margin: 30px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,190 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2rem;
+  height: 20rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  max-width: 33%;
+  max-height: 33%;
+  white-space: nowrap;
+}
+
+.highlighted {
+  background-color: rgba(128, 128, 128, 0.684);
+}
+
+.boardrow:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 1rem;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.bigScore {
+  color: var(--border-color);
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  height: 6rem;
+  line-height: 6rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 10rem;
+  font-weight: bolder;
+}
+
+.rulesButton {
+  width: 100%;
+  border-width: 0px;
+  background: lightblue;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.rulesText {
+  line-height: 25px;
+  margin-top: 10px;
+  text-align: left;
+  color: white;
+}
+
+.rulesContainer {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.resetButton {
+  right: 1rem;
+  margin: 0.4rem;
+  background: #76bdd5;
+  border: 0px;
+  border-radius: 0.4rem;
+}
+
+.headerText {
+  flex-grow: 4;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.6rem;
+  margin: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d8ecf3;
+  transition: 0.2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  /*height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;*/
+  height: 1rem;
+  width: 1rem;
+  left: 0.3rem;
+  bottom: 0.3rem;
+  background-color: white;
+  transition: 0.2s;
+}
+
+input:checked + .slider {
+  background-color: #4fabc9;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4fabc9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.4rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 2rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.lowerText {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 33%;
+}
+
+.buttonsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  float: left;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.slidecontainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}/*# sourceMappingURL=styles.module.css.map */

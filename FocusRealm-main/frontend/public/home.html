@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+</head>
+
+
+
+<body>
+  <div class="relative bg-gray max-w-full h-[2037px] overflow-y-auto text-center text-5xs text-white font-poppins">
+    <div
+      class="absolute top-[590px]  rounded-[50%] bg-gray [filter:blur(250px)] box-border w-[537px] h-[537px] border-[69px] border-solid border-cornflowerblue">
+    </div>
+    <img
+      class="absolute top-[729.2px] left-[calc(50%_-_190px)] rounded-57xl w-[380px] h-[60.8px] overflow-hidden object-contain"
+      alt="" src="/public/music-bar@2x.png" />
+
+    <div
+      class="absolute top-[0px] right-[0px] flex flex-col items-end justify-start pt-5 pb-0 pr-5 pl-[200px] gap-[35px]">
+      <div class="relative w-[75px] h-[75px]">
+        <div class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+          <div
+            class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-[50%] [background:linear-gradient(88.96deg,_rgba(5,_37,_84,_0.5),_rgba(1,_7,_17,_0.5))] shadow-[0.5px_0.5px_2px_rgba(5,_72,_169,_0.5)_inset] box-border border-[0.5px] border-solid border-deepskyblue-100">
+          </div>
+          <div class="absolute top-[calc(16%_+_15.5px)] left-[calc(50%_-_14.5px)] w-[30px] h-[30px]">
+            <div
+              class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] flex flex-row flex-wrap items-center justify-center">
+              <div class="relative w-[30px] h-[30px] [transform:_rotate(-90deg)]">
+                <img
+                  class="absolute top-[calc(50%_-_15px)] left-[calc(50%_-_15px)] w-[30px] h-[30px] object-cover [transform:_rotate(90deg)]"
+                  alt="" src="/public/more@2x.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative w-[75px] h-[75px]">
+        <div
+          class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-[50%] [background:linear-gradient(88.96deg,_rgba(5,_37,_84,_0.5),_rgba(1,_7,_17,_0.5))] box-border border-[1px] border-solid border-dark-stroke">
+        </div>
+        <div
+          class="absolute h-[66.67%] w-[66.67%] top-[17.33%] right-[17.33%] bottom-[16%] left-[16%] overflow-hidden opacity-[0]">
+          <img
+            class="absolute h-[71.27%] w-[75.78%] top-[72%] right-[12.19%] bottom-[-43.27%] left-[12.03%] max-w-full overflow-hidden max-h-full object-cover"
+            alt="" src="/public/group@2x.png" />
+
+          <div class="absolute top-[38px] left-[calc(50%_-_25px)] font-medium">
+            Background
+          </div>
+        </div>
+        <div class="absolute top-[calc(50%_-_37.5px)] left-[calc(50%_-_37.5px)] w-[75px] h-[75px]">
+          <div
+            class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-[50%] [background:linear-gradient(88.96deg,_rgba(5,_37,_84,_0.5),_rgba(1,_7,_17,_0.5))] box-border border-[1px] border-solid border-dark-stroke">
+          </div>
+          <div
+            class="absolute h-[66.67%] w-[66.67%] top-[17.33%] right-[17.33%] bottom-[16%] left-[16%] overflow-hidden opacity-[0]">
+            <img
+              class="absolute h-[71.27%] w-[75.78%] top-[72%] right-[12.19%] bottom-[-43.27%] left-[12.03%] max-w-full overflow-hidden max-h-full object-cover"
+              alt="" src="/public/group@2x.png" />
+
+            <div class="absolute top-[38px] left-[calc(50%_-_25px)] font-medium">
+              Background
+            </div>
+          </div>
+          <img
+            class="absolute h-[57.65%] w-[66.67%] top-[21.33%] right-[17.33%] bottom-[21.02%] left-[16%] max-w-full overflow-hidden max-h-full object-cover"
+            alt="" src="/public/frame-1001@2x.png" />
+        </div>
+      </div>
+      <div class="relative w-[75px] h-[75px] text-6xs" id="task-aggregator-icon" onclick="showAggregatorPopup()">
+        <div class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]">
+          <div
+            class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-[50%] [background:linear-gradient(75.45deg,_rgba(5,_37,_84,_0.5),_rgba(1,_7,_17,_0.5))] box-border border-[1px] border-solid border-deepskyblue-200">
+          </div>
+          <div class="absolute h-[96%] w-[78.67%] top-[0%] right-[10.67%] bottom-[4%] left-[10.67%] opacity-[0]">
+            <img class="absolute top-[0px] left-[4px] w-[50px] h-[50px] object-cover" alt=""
+              src="/public/wiredlineal1459oldshop-1-1@2x.png" />
+
+            <div class="absolute top-[42px] left-[9px] font-medium">
+              <p class="m-0">Task</p>
+              <p class="m-0">Aggregator</p>
+            </div>
+          </div>
+          <img
+            class="absolute top-[calc(50%_-_25px)] left-[calc(50%_-_25px)] w-[50px] h-[50px] overflow-hidden object-cover"
+            alt="" src="/public/wiredlineal1459oldshop-2@2x.png" />
+        </div>
+      </div>
+
+      <!-- popup -->
+      <div
+        class="relative rounded-6xl [background:linear-gradient(270deg,_#010711,_#052554)] shadow-[2px_2px_10px_rgba(50,_183,_246,_0.25)_inset] overflow-hidden flex flex-col items-start justify-start pt-[18px] px-[25px] pb-[31px] gap-[15px] text-left text-sm border-[1px] border-solid border-dark-stroke z-20 hidden"
+        id="task-aggregator-popup">
+
+        <!-- Heading -->
+        <div class="relative flex w-[272px] h-6 text-base">
+          <img class="absolute top-[4px] right-[264px] w-4 h-4 object-cover" alt="" src="/public/back_butoon.svg" onclick="hideAggregatorPopup()"/>
+          <img class="relative pl-[20px] w-[25px] h-[25px] overflow-hidden shrink-0 object-contain " alt=""
+            src="/public/wiredlineal1459oldshop-1-1@2x.png" />
+          <div class="relative font-medium ">
+            Notes Aggregator
+          </div>
+          <img class="absolute top-[5px] left-[254px] w-[18px] h-[18px] object-cover" alt="" src="/public/info@2x.png"
+            id="infoIcon" />
+        </div>
+
+
+        <!-- New code -->
+        <div id="mainTaskContainer"></div>
+
+        <!-- Add Main Task Button -->
+        <div id="newTaskButton"
+          class="relative rounded-xl bg-darkslateblue-500 shadow-[1px_0.5px_4px_rgba(1,_72,_183,_0.35)_inset] box-border w-[272px] h-[50px] overflow-hidden shrink-0 border-[1px] border-solid border-dark-stroke hover:cursor-pointer"
+          onclick="addMainTask()">
+          <div class="absolute top-[15px] left-[20px] w-[100%] h-[21px]">
+            <div class="absolute top-[calc(50%_-_10.5px)] left-[0px]">
+              Add Main Task
+            </div>
+          </div>
+          <img class="absolute top-[calc(50%_-_10px)] right-[20px] w-5 h-5 object-cover" alt=""
+            src="/public/vector@2x.png" />
+        </div>
+
+        <!-- Cancel / Save -->
+        <div class="flex w-full justify-evenly">
+          <button class="w-[100px] bg-red-500 rounded-full p-2 text-white hover:cursor-pointer" onclick="deleteAllTasks()">Cancel</button>
+          <button class="w-[100px] bg-green-500 rounded-full p-2 text-white  hover:cursor-pointer">Save</button>
+        </div>
+
+        <!-- Score section -->
+        <div
+          class="relative rounded-xl bg-darkslateblue-500 shadow-[1px_0.5px_4px_rgba(1,_72,_183,_0.35)_inset] box-border w-[272px] h-fit overflow-hidden shrink-0 border-[1px] border-solid border-dark-stroke flex">
+          <div class="w-[100%] flex flex-col justify-center items-center p-4">
+            <div>0</div>
+            <div>Task Set</div>
+          </div>
+          <div class="w-1 bg-dark-stroke h-[50px] m-auto"></div>
+          <div class="w-[100%] flex flex-col justify-center items-center p-4">
+            <div>0</div>
+            <div>Completed</div>
+          </div>
+        </div>
+
+        <!-- Ongoing Task heading -->
+        <div class="relative flex w-[272px] h-6 text-base">
+          <div class="relative font-medium ">
+            Ongoing Tasks
+          </div>
+        </div>
+
+        <!-- Sample Ongoing task -->
+        <div
+          class="relative rounded-xl bg-darkslateblue-500 shadow-[1px_0.5px_4px_rgba(1,_72,_183,_0.35)_inset] box-border w-[272px] min-h-[50px] h-full overflow-hidden shrink-0 border-[1px] border-solid border-dark-stroke">
+          <!-- Physics header -->
+          <div class="absolute top-[15px] left-[20px] w-[89px] h-[21px]">
+            <div class="absolute top-[calc(50%_-_10.5px)] left-[0px] font-semibold">
+              Physics
+            </div>
+          </div>
+
+          <!-- Action icons -->
+          <div class="flex absolute top-0 bottom-0 right-[20px] max-h-full">
+            <img class="w-5 object-contain p-1 cursor-pointer" alt="" src="./public/task-aggregator-re.png" />
+            <img class="w-5 object-contain p-1 cursor-pointer" alt="" src="./public/task-aggregator-cancel.png" />
+            <img class="w-5 object-contain p-1 cursor-pointer" alt="" src="./public/task-aggregator-not-done.png" />
+          </div>
+
+          <!-- List of chapters (initially hidden) -->
+          <!-- <ul class="absolute mt-[50px] left-0 w-full h-auto overflow-hidden" id="physicsChapters">
+            <li>Chapter 1: A</li>
+            <li>Chapter 2: B</li>
+            <li>Chapter 3: C</li>
+          </ul> -->
+        </div>
+
+      </div>
+
+      
+
+      <div
+        class="rounded-6xl [background:linear-gradient(270deg,_#010711,_#052554)] shadow-[2px_2px_10px_rgba(50,_183,_246,_0.25)_inset] overflow-hidden flex flex-col items-start justify-start pt-[18px] px-[25px] pb-[31px] gap-[15px] text-left text-sm border-[1px] border-solid border-dark-stroke z-20">
+        <div class="relative flex w-[272px] h-6 text-base">
+          <img class="absolute top-[4px] right-[264px] w-4 h-4 object-cover" alt="" src="/public/vector@2x.png" />
+          <img class="relative pl-[20px] w-[25px] h-[25px] overflow-hidden shrink-0 object-contain " alt=""
+            src="/public/wiredlineal245editdocument-2@2x.png" />
+          <div class="relative font-medium ">
+            Take Notes
+          </div>
+          <img class="absolute top-[5px] left-[254px] w-[18px] h-[18px] object-cover" alt="" src="/public/info@2x.png"
+            id="infoIcon" />
+
+          <div
+            class="absolute top-[0px] left-[calc(50%_+_13.5px)] flex flex-row items-center justify-center gap-[10px] [transform:_rotate(180deg)] [transform-origin:0_0]">
+          </div>
+        </div>
+        <div class="relative w-[154px] h-[21px]">
+          <div class="absolute top-[0px] left-[0px]">
+            <span>Current task - </span>
+            <span class="font-semibold">Biology</span>
+          </div>
+          <div id="frameContainer" class=""
+            style="display: none ; position: relative ; width: 240px ; justify-content: center ; align-items: center">
+            <div
+              class="relative rounded-xl bg-darkslateblue-200 box-border overflow-hidden  flex-row items-end justify-center py-[15px] px-3 max-w-[90%] max-h-[90%] text-left text-3xs text-white font-poppins border-[1px] border-solid border-dark-stroke">
+              <div class="relative inline-block w-44 shrink-0">
+                Note some important points to revise them anytime, anywhere. Just go
+                to previous sessions in your profile to go through all the important
+                topics.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Take Notes -->
+        <div id="notesContainer">
+          <!-- HTML for notes container - kept for future refrence to javascript -->
+          <!-- <div
+            class="relative rounded-xl bg-darkslateblue-500 shadow-[1px_0.5px_4px_rgba(1,_72,_183,_0.35)_inset] box-border w-[272px] overflow-hidden shrink-0 border-[1px] border-solid border-dark-stroke text-white font-poppins"
+            id="note1">
+            <div>
+              <input type="text" id="title1" name="title1" placeholder="Type title here"
+                class="w-full px-3 py-2 border-0 focus:outline-none bg-[#0B316E] font-poppins text-white">
+              <div class="absolute right-0 top-0 mt-1 mr-1" onclick="deleteNote('note1')">
+                <img src="./public/Frame892.png">
+              </div>
+            </div>
+            <div>
+              <textarea id="notes1" name="notes1" placeholder="Type notes here" rows="4"
+                class="w-full px-3 py-2 border-0 focus:outline-none bg-[#0B316E] font-poppins text-white"></textarea>
+            </div>
+          </div> -->
+        </div>
+
+        <div id="newNoteButton"
+          class="relative rounded-xl bg-darkslateblue-500 shadow-[1px_0.5px_4px_rgba(1,_72,_183,_0.35)_inset] box-border w-[272px] h-[50px] overflow-hidden shrink-0 border-[1px] border-solid border-dark-stroke hover:cursor-pointer"
+          onclick="addNewNote()">
+          <div class="absolute top-[15px] left-[20px] w-[89px] h-[21px]">
+            <div class="absolute top-[calc(50%_-_10.5px)] left-[0px]">
+              New note
+            </div>
+          </div>
+          <img class="absolute top-[calc(50%_-_10px)] right-[20px] w-5 h-5 object-cover" alt=""
+            src="/public/vector@2x.png" />
+        </div>
+
+        <div
+          class="relative rounded-xl bg-darkslateblue-500 shadow-[1px_0.5px_4px_rgba(1,_72,_183,_0.35)_inset] box-border w-[272px] h-[50px] overflow-hidden shrink-0 cursor-pointer border-[1px] border-solid border-dark-stroke"
+          id="frameContainer10">
+          <div class="absolute top-[15px] left-[20px] h-[21px] w-full">
+            <div class="absolute top-[calc(50%_-_10.5px)] left-[0px] font-semibold">
+              Cell structure
+            </div>
+          </div>
+          <img class="absolute top-[calc(50%_-_0px)] right-[20px] max-h-full w-5 object-cover" alt=""
+            src="/public/arrow-4@2x.png" />
+        </div>
+        <div class="flex flex-row items-center justify-center">
+          <div class="relative font-medium">Previous task notes</div>
+        </div>
+        <div
+          class="relative rounded-xl bg-darkslateblue-500 shadow-[1px_0.5px_4px_rgba(1,_72,_183,_0.35)_inset] box-border w-[272px] h-[50px] overflow-hidden shrink-0 cursor-pointer border-[1px] border-solid border-dark-stroke"
+          id="frameContainer10">
+          <div class="absolute top-[15px] left-[20px] w-[89px] h-[21px]">
+            <div class="absolute top-[calc(50%_-_10.5px)] left-[0px] font-semibold">
+              Physics
+            </div>
+          </div>
+          <img class="absolute top-[calc(50%_-_0px)] right-[20px] max-h-full w-5 object-cover" alt=""
+            src="/public/arrow-4@2x.png" />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="absolute top-[125px] [filter:drop-shadow(-8px_-8px_50px_rgba(50,_183,_246,_0.05))_drop-shadow(8px_8px_50px_rgba(50,_183,_246,_0.05))_drop-shadow(-4px_-4px_25px_rgba(50,_183,_246,_0.15))_drop-shadow(4px_4px_25px_rgba(50,_183,_246,_0.15))_drop-shadow(0px_0px_57.46px_rgba(76,_125,_201,_0.25))_drop-shadow(0px_0px_32.83px_rgba(76,_125,_201,_0.25))] w-[936px] h-[495px] text-[31.28px]">
+      <div class="absolute right-[0px] bottom-[0px] w-[380px] h-[380px]">
+        <div
+          class="absolute h-full rounded-[50%] w-full top-[0%] right-[0%] bottom-[0%] left-[0%] shadow-[-8px_-8px_50px_rgba(50,_183,_246,_0.05),_8px_8px_50px_rgba(50,_183,_246,_0.05),_-4px_-4px_25px_rgba(50,_183,_246,_0.15),_4px_4px_25px_rgba(50,_183,_246,_0.15),_0px_0px_57.46px_rgba(76,_125,_201,_0.25),_0px_0px_32.83px_rgba(76,_125,_201,_0.25)]">
+          <img
+            class="absolute top-[calc(50%_-_25px)] left-[375px] rounded-tl-none rounded-tr-3xs rounded-br-3xs rounded-bl-none w-10 h-[50px] overflow-hidden object-cover"
+            alt="" src="/public/frame-761@2x.png" />
+          <div
+            class="absolute top-[calc(50%_-_190px)] left-[calc(50%_-_190px)] rounded-[50%] bg-gray shadow-[15.637859344482422px_15.637859344482422px_78.19px_rgba(50,_183,_246,_0.25)_inset] box-border w-[380px] h-[380px] border-[7.8px] border-solid border-royalblue">
+          </div>
+          <div class="absolute top-[94.61px] left-[calc(50%_-_74.09px)] font-medium ">Chapter 1</div>
+          <b
+            class="absolute top-[calc(50%_-_28.93px)] left-[calc(50%_-_86.79px)] text-[39.09px] text-left ">00:48:02</b>
+
+          <img
+            class="absolute h-[8.23%] w-[26.75%] top-[66.87%] right-[36.63%] bottom-[24.9%] left-[36.63%] max-w-full overflow-hidden max-h-full object-cover"
+            alt="" src="/public/group-333@2x.png" />
+          <img onclick="showContent()"
+            class=" relative top-[45%] right-[39%] h-[6.17%] w-[5.86%] max-w-full cursor-pointer  overflow-hidden max-h-full object-cover"
+            alt="" src="/public/group@2x.png" />
+        </div>
+      </div>
+    </div>
+
+    <div id="content"
+      class="absolute top-[125px] hidden  [filter:drop-shadow(-8px_-8px_50px_rgba(50,_183,_246,_0.05))_drop-shadow(8px_8px_50px_rgba(50,_183,_246,_0.05))_drop-shadow(-4px_-4px_25px_rgba(50,_183,_246,_0.15))_drop-shadow(4px_4px_25px_rgba(50,_183,_246,_0.15))_drop-shadow(0px_0px_57.46px_rgba(76,_125,_201,_0.25))_drop-shadow(0px_0px_32.83px_rgba(76,_125,_201,_0.25))] w-[936px] h-[495px] text-[31.28px]">
+      <div class="absolute right-[0px] bottom-[0px] w-[380px] h-[380px]">
+        <div
+          class="absolute h-full rounded-[50%] w-full top-[0%] right-[0%] bottom-[0%] left-[0%] shadow-[-8px_-8px_50px_rgba(50,_183,_246,_0.05),_8px_8px_50px_rgba(50,_183,_246,_0.05),_-4px_-4px_25px_rgba(50,_183,_246,_0.15),_4px_4px_25px_rgba(50,_183,_246,_0.15),_0px_0px_57.46px_rgba(76,_125,_201,_0.25),_0px_0px_32.83px_rgba(76,_125,_201,_0.25)]">
+          <img
+            class="absolute top-[calc(50%_-_25px)] left-[375px] rounded-tl-none rounded-tr-3xs rounded-br-3xs rounded-bl-none w-10 h-[50px] overflow-hidden object-cover"
+            alt="" src="/public/frame-761@2x.png" />
+          <div
+            class="absolute top-[calc(50%_-_190px)] left-[calc(50%_-_190px)] rounded-[50%] bg-gray shadow-[15.637859344482422px_15.637859344482422px_78.19px_rgba(50,_183,_246,_0.25)_inset] box-border w-[380px] h-[380px] border-[7.8px] border-solid border-royalblue">
+          </div>
+          <div class="absolute top-[70px] left-[calc(46%_-_74.09px)] text-xl">Focus time</div>
+          <div class="absolute top-[24%] left-[calc(50%_-_86.79px)] text-[39.09px] text-left d-flex">
+            <input type="number" class="w-[66px] h-[34px] border rounded-2xl text-center text-l" placeholder="00hr">
+            <input type="number" class="w-[66px] h-[34px] rounded-2xl text-center text-l" placeholder="00min">
+          </div>
+          <div
+            class="absolute h-[8.23%] w-[26.75%] top-[41%] text-xl right-[36.63%] bottom-[24.9%] left-[21%] max-w-full overflow-hidden max-h-full object-cover">
+            Break time</div>
+          <div class="absolute top-[46.91%] left-[calc(50%_-_86.79px)] text-[39.09px] text-left d-flex">
+            <input type="number" class="w-[66px] h-[34px] border rounded-m rounded-2xl text-center text-l"
+              placeholder="hh">
+          </div>
+          <div class="top-[calc(83%_-_55.75px)] absolute left-[calc(53%_-_86.79px)] text-[39.09px] text-left d-flex">
+            <button class="w-[128px] h-[40px] rounded-2xl">start</button>
+          </div>
+          <img alt="" src="/public/group-333@2x.png" />
+          <img onclick="hideContent()"
+            class=" cursor-pointer  h-[6.17%] w-[5.86%]  max-w-full overflow-hidden max-h-full object-cover" alt=""
+            src="/public/group@2x.png" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="absolute top-[446px] right-[1309px] rounded-[50%] bg-cornflowerblue [filter:blur(250px)] w-[399px] h-[399px]">
+    </div>
+    <div
+      class="absolute top-[0px] left-[0px] [background:linear-gradient(177.47deg,_rgba(1,_7,_17,_0.5),_rgba(1,_7,_17,_0))] w-[115px] h-[1024px] text-left text-xl">
+      <div class="absolute top-[0px] left-[0px] w-[1437px] h-[813px] overflow-hidden">
+        <div class="absolute top-[41px] left-[30px] flex flex-row items-center justify-start cursor-pointer"
+          id="frameContainer12">
+          <img class="relative w-[45px] h-[34px] object-cover" alt="" src="/public/logo-1@2x.png" />
+
+          <div class="relative font-medium">Focus Realm</div>
+        </div>
+        <div
+          class="absolute top-[115px] left-[20px] flex flex-col items-center justify-center gap-[40px] text-center text-3xs">
+          <div class="relative w-[75px] h-[75px]">
+            <div
+              class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-[50%] [background:linear-gradient(75.45deg,_rgba(5,_37,_84,_0.5),_rgba(1,_7,_17,_0.5))] box-border border-[1px] border-solid border-deepskyblue-200">
+            </div>
+            <div
+              class="absolute h-[86.67%] w-[78.67%] top-[6.67%] right-[10.67%] bottom-[6.67%] left-[10.67%] opacity-[0]">
+              <div class="absolute top-[50px] left-[0px] font-medium">
+                Focus room
+              </div>
+              <img class="absolute top-[4px] left-[4px] w-[50px] h-[50px] object-cover" alt=""
+                src="/public/wiredlineal134target-1-1@2x.png" />
+            </div>
+            <img
+              class="absolute top-[calc(50%_-_25px)] left-[calc(50%_-_25px)] w-[50px] h-[50px] overflow-hidden object-cover"
+              alt="" src="/public/wiredlineal134target-2@2x.png" />
+          </div>
+          <div class="relative w-[73.37px] h-[75px] text-left">
+            <div
+              class="absolute h-full w-[102.22%] top-[0%] right-[-2.22%] bottom-[0%] left-[0%] rounded-[50%] [background:linear-gradient(75.45deg,_rgba(5,_37,_84,_0.5),_rgba(1,_7,_17,_0.5))] box-border opacity-[0] border-[1px] border-solid border-deepskyblue-200">
+            </div>
+            <div class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] opacity-[0]">
+              <img class="absolute top-[0px] left-[0px] w-[73.37px] h-[55.43px] object-cover" alt=""
+                src="/public/logo-1@2x.png" />
+
+              <div class="absolute top-[55.43px] left-[calc(50%_-_22.5px)] font-medium">
+                About us
+              </div>
+            </div>
+            <img
+              class="absolute h-[73.91%] w-full top-[12%] right-[0%] bottom-[14.09%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
+              alt="" src="/public/logo-1@2x.png" />
+          </div>
+          <div class="relative w-[75px] h-[75px]">
+            <div
+              class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-[50%] [background:linear-gradient(75.45deg,_rgba(5,_37,_84,_0.5),_rgba(1,_7,_17,_0.5))] box-border hidden border-[1px] border-solid border-deepskyblue-200">
+            </div>
+            <div
+              class="absolute h-[86.67%] w-[66.67%] top-[6.67%] right-[17.33%] bottom-[6.67%] left-[16%] opacity-[0]">
+              <img class="absolute top-[0px] left-[0px] w-[50px] h-[50px] object-cover" alt=""
+                src="/public/wiredlineal268avatarman-2-1@2x.png" />
+
+              <div class="absolute top-[50px] left-[10px] font-medium">
+                Profile
+              </div>
+            </div>
+            <img
+              class="absolute h-[66.67%] w-[66.67%] top-[16.67%] right-[18%] bottom-[16.67%] left-[15.33%] max-w-full overflow-hidden max-h-full object-cover"
+              alt="" src="/public/wiredlineal268avatarman-1-1@2x.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute top-[0px] left-[calc(50%_-_405px)] w-[810px] h-[151.5px]">
+      <div class="absolute top-[calc(50%_-_55.75px)] left-[calc(50%_-_38px)] w-[75px] h-[75px]">
+        <div
+          class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-[50%] [background:linear-gradient(270deg,_rgba(1,_7,_17,_0.5),_rgba(5,_37,_84,_0.5))] box-border border-[1px] border-solid border-dark-stroke">
+        </div>
+        <div class="absolute h-[69.33%] w-[53.33%] top-[16%] right-[22.67%] bottom-[14.67%] left-[24%] opacity-[0]">
+          <img class="absolute top-[0px] left-[0px] w-10 h-10 object-cover" alt=""
+            src="/public/wiredgradient41quotationmarksecond-1@2x.png" />
+        </div>
+        <img
+          class="absolute h-[66.67%] w-[66.67%] top-[17.33%] right-[16.67%] bottom-[16%] left-[16.67%] max-w-full overflow-hidden max-h-full object-cover"
+          alt="" src="/public/wiredgradient41quotationmarksecond-1-1@2x.png" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var infoIcon = document.getElementById("infoIcon");
+    if (infoIcon) {
+      infoIcon.addEventListener("click", function () {
+        var popup = document.getElementById("frameContainer");
+        if (!popup) return;
+        var popupStyle = popup.style;
+        if (popupStyle) {
+          popupStyle.display = "flex";
+          popupStyle.zIndex = 100;
+          popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+          popupStyle.alignItems = "center";
+          popupStyle.justifyContent = "center";
+        }
+        popup.setAttribute("closable", "");
+
+        var onClick =
+          popup.onClick ||
+          function (e) {
+            if (e.target === popup && popup.hasAttribute("closable")) {
+              popupStyle.display = "none";
+            }
+          };
+        popup.addEventListener("click", onClick);
+      });
+    }
+
+    var frameContainer10 = document.getElementById("frameContainer10");
+    if (frameContainer10) {
+      frameContainer10.addEventListener("click", function () {
+        var anchor = document.querySelector("[data-scroll-to='component199Container']");
+        if (anchor) {
+          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+      });
+    }
+
+    function showContent() {
+      var contentElement = document.getElementById('content');
+      if (contentElement) {
+        contentElement.style.display = 'flex';
+        contentElement.style.zIndex = '6';
+      }
+    }
+
+    function hideContent() {
+      var contentElement = document.getElementById('content');
+      if (contentElement) {
+        contentElement.style.display = 'none';
+      }
+    }
+
+    function addNewNote() {
+      var notesContainer = document.getElementById('notesContainer');
+      var newNoteContainer = document.createElement('div');
+      newNoteContainer.className = 'relative rounded-xl bg-darkslateblue-500 shadow-[1px_0.5px_4px_rgba(1,_72,_183,_0.35)_inset] box-border w-[272px] overflow-hidden shrink-0 border-[1px] border-solid border-dark-stroke text-white font-poppins mt-2';
+      var newNoteId = 'note' + (notesContainer.children.length + 1);
+      newNoteContainer.id = newNoteId;
+
+      var titleInput = document.createElement('input');
+      titleInput.type = 'text';
+      titleInput.id = 'title' + (notesContainer.children.length + 1);
+      titleInput.name = 'title' + (notesContainer.children.length + 1);
+      titleInput.placeholder = 'Type title here';
+      titleInput.className = 'w-full px-3 py-2 border-0 focus:outline-none bg-[#0B316E] font-poppins text-white';
+
+      var deleteButton = document.createElement('div');
+      deleteButton.className = 'absolute right-0 top-0 mt-1 mr-1';
+      var deleteImage = document.createElement('img');
+      deleteImage.src = 'public/Frame892.png';
+      deleteButton.onclick = function () { deleteNote(newNoteId); };
+      deleteButton.appendChild(deleteImage);
+
+
+      newNoteContainer.appendChild(titleInput);
+      newNoteContainer.appendChild(deleteButton);
+
+      var notesTextarea = document.createElement('textarea');
+      notesTextarea.id = 'notes' + (notesContainer.children.length + 1);
+      notesTextarea.name = 'notes' + (notesContainer.children.length + 1);
+      notesTextarea.placeholder = 'Type notes here';
+      notesTextarea.rows = 4;
+      notesTextarea.className = 'w-full px-3 py-2 border-0 focus:outline-none bg-[#0B316E] font-poppins text-white';
+
+      newNoteContainer.appendChild(notesTextarea);
+      notesContainer.appendChild(newNoteContainer);
+    }
+
+    function deleteNote(noteId) {
+      var noteToRemove = document.getElementById(noteId);
+      if (noteToRemove) {
+        noteToRemove.remove();
+      }
+    }
+
+    // Task aggregator monior functions
+
+    
+    function showAggregatorPopup() {
+      const iconToHide = document.getElementById('task-aggregator-icon');
+      const popupToShow = document.getElementById('task-aggregator-popup');
+      iconToHide.classList.add('hidden');
+      popupToShow.classList.remove('hidden');
+    }
+
+    function hideAggregatorPopup() {
+      const popupToHide = document.getElementById('task-aggregator-popup');
+      const iconToShow = document.getElementById('task-aggregator-icon');
+      popupToHide.classList.add('hidden');
+      iconToShow.classList.remove('hidden');
+    }
+
+    function toggleChapters(containerId) {
+      const header = document.getElementById(containerId).querySelector('.font-semibold');
+      const chapters = document.getElementById(containerId).querySelector('ul');
+
+      chapters.classList.toggle('hidden');
+    }
+
+    function toggleImage(imgElement) {
+      const originalSrc = "public/task-aggregator-not-done.png";
+      const doneSrc = "public/task-aggregator-done.png";
+
+      if (imgElement.src === originalSrc) {
+        imgElement.src = doneSrc;
+      } else {
+        imgElement.src = originalSrc;
+      }
+    }
+
+    // Cancel Button
+    function deleteAllTasks() {
+      const mainTaskContainer = document.getElementById('mainTaskContainer');
+      mainTaskContainer.innerHTML = '';
+    }
+
+
+  <!-- Task aggregator Script -->
+
+    let mainTaskCounter = 0;
+    let subTaskCounter = 0;
+
+    function addMainTask() {
+      mainTaskCounter++;
+      const mainTaskContainer = document.getElementById('mainTaskContainer');
+
+      // main task element
+      const newMainTask = document.createElement('div');
+      newMainTask.innerHTML = `
+        <!-- Main Task Element -->
+        <div id="mainTask${mainTaskCounter}">
+          <div>
+          <div class="relative rounded-xl bg-darkslateblue-500 box-border w-[272px] h-[50px] overflow-hidden shrink-0 border-[1px] border-solid border-dark-stroke text-white mt-2">
+            <input class="absolute top-[15px] left-[20px] w-[100%] h-[21px] bg-darkslateblue-500 text-white border-0 outline-0" placeholder="Enter Main Task's name..."></input>
+          </div>
+
+          <div class="flex w-[272px] items-center justify-between mt-2">
+            <div class="w-[33%]">Focus Time</div>
+            <div class="relative rounded-xl bg-darkslateblue-500 box-border w-[25%] h-[50px] overflow-hidden border-[1px] border-solid border-dark-stroke text-white">
+              <input type="number" class="absolute top-[15px] left-[20px] w-[100%] h-[21px] bg-darkslateblue-500 text-white border-0 outline-0" placeholder="00 hr"></input>
+            </div>
+            <div class="relative rounded-xl bg-darkslateblue-500 box-border w-[25%] h-[50px] overflow-hidden border-[1px] border-solid border-dark-stroke text-white">
+              <input type="number" class="absolute top-[15px] left-[20px] w-[100%] h-[21px] bg-darkslateblue-500 text-white border-0 outline-0" placeholder="00 min"></input>
+            </div>
+          </div>
+
+          <div class="flex w-[272px] items-center mt-2 justify-between">
+            <div class="w-[33%]">Break Time</div>
+            <div class="relative rounded-xl bg-darkslateblue-500 box-border w-[25%] h-[50px] overflow-hidden border-[1px] border-solid border-dark-stroke text-white">
+              <input type="number" class="absolute top-[15px] left-[20px] w-[100%] h-[21px] bg-darkslateblue-500 text-white border-0 outline-0" placeholder="00 min"></input>
+            </div>
+          </div>
+
+          <div class="flex w-[272px] items-center mt-2 justify-between">
+            <div class="w-[33%]">Cycles</div>
+            <div class="relative rounded-xl bg-darkslateblue-500 box-border w-[25%] h-[50px] overflow-hidden border-[1px] border-solid border-dark-stroke text-white">
+              <input type="number" class="absolute top-[15px] left-[20px] w-[100%] h-[21px] bg-darkslateblue-500 text-white border-0 outline-0" placeholder="00 min"></input>
+            </div>
+          </div>
+        </div>
+
+        <!-- Container for Subtask Elements -->
+          <div id="subTaskContainer${mainTaskCounter}" class="hidden"></div>
+          
+          <!-- Add Subtask Button -->
+          <div
+            class="relative rounded-xl bg-darkslateblue-500 shadow-[1px_0.5px_4px_rgba(1,_72,_183,_0.35)_inset] box-border w-[272px] h-[50px] overflow-hidden shrink-0 border-[1px] border-solid border-dark-stroke hover:cursor-pointer mt-2"
+            onclick="addSubTask(${mainTaskCounter})">
+            <div class="absolute top-[15px] left-[20px] w-[100%] h-[21px]">
+              <div class="absolute top-[calc(50%_-_10.5px)] left-[0px]">
+                Add Sub Task
+              </div>
+            </div>
+            <img class="absolute top-[calc(50%_-_10px)] right-[20px] w-5 h-5 object-cover" alt=""
+              src="/public/vector@2x.png" />
+          </div>
+          
+        </div>
+      `;
+
+      mainTaskContainer.appendChild(newMainTask);
+      newMainTask.classList.remove('hidden');
+    }
+
+    function addSubTask(mainTaskId) {
+      subTaskCounter++;
+      const subTaskContainer = document.getElementById(`subTaskContainer${mainTaskId}`);
+
+      // new subtask element
+      const newSubTask = document.createElement('div');
+      newSubTask.innerHTML = `
+        <!-- Subtask Element -->
+        <div>
+          
+
+          <div class="relative rounded-xl bg-darkslateblue-500 box-border w-[272px] h-[50px] overflow-hidden shrink-0 border-[1px] border-solid border-dark-stroke text-white mt-2">
+            <input class="absolute top-[15px] left-[20px] w-[80%] h-[21px] bg-darkslateblue-500 text-white border-0 outline-0" placeholder="Enter SubTask's name..."></input>
+            <div class="absolute w-5 right-0 h-full flex justify-center items-center">
+                <img class="w-5 object-contain p-1 cursor-pointer cancel-image" alt="cancel" src="./public/task-aggregator-cancel.png" />
+            </div>
+          </div>
+
+          <div class="flex w-[272px] items-center justify-between mt-2">
+            <div class="w-[33%]">Focus Time</div>
+            <div class="relative rounded-xl bg-darkslateblue-500 box-border w-[25%] h-[50px] overflow-hidden border-[1px] border-solid border-dark-stroke text-white">
+              <input type="number" class="absolute top-[15px] left-[20px] w-[100%] h-[21px] bg-darkslateblue-500 text-white border-0 outline-0" placeholder="00 hr"></input>
+            </div>
+            <div class="relative rounded-xl bg-darkslateblue-500 box-border w-[25%] h-[50px] overflow-hidden border-[1px] border-solid border-dark-stroke text-white">
+              <input type="number" class="absolute top-[15px] left-[20px] w-[100%] h-[21px] bg-darkslateblue-500 text-white border-0 outline-0" placeholder="00 min"></input>
+            </div>
+          </div>
+
+          <div class="flex w-[272px] items-center mt-2 justify-between">
+            <div class="w-[33%]">Break Time</div>
+            <div class="relative rounded-xl bg-darkslateblue-500 box-border w-[25%] h-[50px] overflow-hidden border-[1px] border-solid border-dark-stroke text-white">
+              <input type="number" class="absolute top-[15px] left-[20px] w-[100%] h-[21px] bg-darkslateblue-500 text-white border-0 outline-0" placeholder="00 min"></input>
+            </div>
+          </div>
+
+          <div class="flex w-[272px] items-center mt-2 justify-between">
+            <div class="w-[33%]">Cycles</div>
+            <div class="relative rounded-xl bg-darkslateblue-500 box-border w-[25%] h-[50px] overflow-hidden border-[1px] border-solid border-dark-stroke text-white">
+              <input type="number" class="absolute top-[15px] left-[20px] w-[100%] h-[21px] bg-darkslateblue-500 text-white border-0 outline-0" placeholder="00 min"></input>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Add an event listener to the cancel image
+      const cancelImage = newSubTask.querySelector('.cancel-image');
+      cancelImage.addEventListener('click', () => {
+        newSubTask.remove();
+      });
+
+      subTaskContainer.appendChild(newSubTask);
+      subTaskContainer.classList.remove('hidden');
+    }
+  </script>
+</body>
+
+</html>

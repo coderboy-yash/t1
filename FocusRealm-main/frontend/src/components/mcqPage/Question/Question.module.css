@@ -1,0 +1,61 @@
+.container {
+  width: 90%;
+  margin: auto;
+  color: white;
+}
+.container h1 {
+  font-weight: 600;
+  font-size: calc(1rem + 4px);
+  margin-bottom: 40px;
+}
+.container .options {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin-bottom: 40px;
+}
+@media (max-width: 550px) {
+  .container .options {
+    grid-template-columns: 1fr;
+  }
+}
+.container .options input {
+  display: none;
+}
+.container .options label {
+  background-color: var(--btn-color);
+  height: 60px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #161b42;
+  transition: all 0.2s;
+}
+.container .options label.active {
+  border: 3px solid white;
+}
+.container .buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .container .buttons {
+    justify-content: center;
+  }
+}
+.container .buttons div {
+  display: flex;
+  max-width: 300px;
+  gap: 20px;
+}
+.container .buttons Button {
+  border-radius: 8px;
+}/*# sourceMappingURL=Question.module.css.map */

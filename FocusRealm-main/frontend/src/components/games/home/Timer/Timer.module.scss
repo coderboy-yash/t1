@@ -1,0 +1,103 @@
+.forth {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+
+    @media (max-width: 750px) {
+        width: 45vh;
+        height: 45vh;
+    }
+
+    .title {
+        margin: auto;
+        max-width: 700px;
+        text-align: center;
+        top: 20%;
+        max-width: 200px;
+        font-size: 22px;
+        position: absolute;
+
+        label {
+            font-weight: bold;
+            text-transform: capitalize;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 1100px) {
+            font-size: large;
+            top: 20px;
+        }
+
+        @media (max-width: 750px) {
+            font-size: small;
+            top: 50px;
+        }
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 29vw;
+        background: rgba(217, 217, 217, 0.08);
+        height: 29vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        .play {
+            width: 100%;
+            max-width: 3rem;
+            margin-top: 2rem;
+
+            img {
+                width: 100%;
+                height: 3rem;
+                cursor: pointer;
+            }
+
+            @media (max-width: 700px) {
+                max-width: 2rem;
+
+                img {
+                    height: 2rem;
+                }
+            }
+        }
+
+        .settings {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 750px) {
+            width: 38vh;
+            height: 38vh;
+        }
+
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 5rem;
+            font-style: italic;
+            color: white;
+            letter-spacing: 4px;
+
+            @media (max-width: 1000px) {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.forth.light {
+    .container {
+        background: rgba(217, 217, 217, 0.392);
+    }
+}

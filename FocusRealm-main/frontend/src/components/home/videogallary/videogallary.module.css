@@ -1,0 +1,46 @@
+.gallary {
+  position: absolute;
+  left: 0px;
+  bottom: 10vh;
+  animation: moveIN 0.3s;
+}
+.gallary .video {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-height: 60vh;
+  width: 10vw;
+  overflow-y: scroll;
+  margin: 15px 5px auto;
+}
+@media (max-width: 650px) {
+  .gallary .video {
+    gap: 4px;
+    margin: 1px;
+    max-height: 25vh;
+  }
+}
+.gallary .video video {
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+}
+@media (max-width: 650px) {
+  .gallary {
+    bottom: 35vh;
+  }
+}
+.gallary .video::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes moveIn {
+  0% {
+    bottom: -4%;
+  }
+  100% {
+    bottom: 4%;
+  }
+}/*# sourceMappingURL=videogallary.module.css.map */

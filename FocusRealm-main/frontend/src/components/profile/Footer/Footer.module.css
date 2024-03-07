@@ -1,0 +1,42 @@
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  .footer {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    width: 100%;
+  }
+}
+.footer .sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  width: 3rem;
+}
+.footer a {
+  cursor: pointer;
+  margin: 15px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer span {
+  margin-left: 8px;
+}
+.footer .text {
+  width: -moz-max-content;
+  width: max-content;
+}/*# sourceMappingURL=Footer.module.css.map */

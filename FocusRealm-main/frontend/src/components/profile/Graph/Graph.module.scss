@@ -1,0 +1,84 @@
+.container {
+    grid-area: graph;
+    width: 100%;
+    background: var(--graph-color);
+    mix-blend-mode: normal;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h2 {
+        color: white;
+        padding-bottom: 15px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.378);
+        font-weight: 500;
+    }
+
+    .rewards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        row-gap: 50px;
+        filter: blur(5px) brightness(1);
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                max-width: 80px;
+                height: 80px;
+                object-fit: contain;
+                filter: blur(10px);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .overcontainer {
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 20px;
+        width: 90%;
+        z-index: 3;
+        border-radius: 20px;
+        background-color: rgba(240, 248, 255, 0.125);
+        font-size: 20px;
+        position: relative;
+        top: 50%;
+
+        // background-color: rgba(240, 248, 255, 0.125);
+        // display: flex;
+        // text-align: center;
+        // border: 2px solid var(--border-color);
+        // border-radius: 10px;
+        // width: 20%;
+        // height: 250px;
+        // padding-top: 100px;
+        // position: absolute;
+        // top: 45%;
+        // left: 30%;
+        // font-size: 30px;
+
+        // @media (max-width:700px) {
+        //     font-size: 15px;
+        //     width: 30%;
+        //     height: 150px;
+        //     position: absolute;
+        //     top: 1050px;
+        //     left: 150px;
+        //     padding-top: 65px;
+        //   }
+    }
+}

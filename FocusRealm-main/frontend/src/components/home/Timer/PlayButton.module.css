@@ -1,0 +1,29 @@
+.playBtn {
+  width: 1000px;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 20px 35px; /* Adjust to change size of the button */
+  border-color: transparent transparent transparent #0466E3;
+  background-color: #1B1F3E; /* Background color */
+  position: relative;
+  overflow: hidden;
+}
+
+.playBtn::before {
+  content: "";
+  top: -20px;
+  left: 0;
+  width: 100px;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 20px 35px; /* Same size as main button */
+  border-color: transparent transparent transparent #05D2FF;
+}
+
+.playBtn:hover {
+  cursor: pointer;
+}
+
+.playBtn:hover::before {
+  border-color: transparent transparent transparent #fff;
+}/*# sourceMappingURL=PlayButton.module.css.map */

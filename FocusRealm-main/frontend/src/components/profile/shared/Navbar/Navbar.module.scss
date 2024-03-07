@@ -1,0 +1,320 @@
+.container {
+    width: 100%;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 650px) {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+        color: white;
+        flex: 1;
+        cursor: pointer;
+
+        span {
+            font-weight: 200;
+        }
+    }
+
+    .timer {
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 10px 30px;
+        border-radius: 50px;
+        margin-right: 10px;
+        cursor: pointer;
+
+        h2 {
+            color: white;
+            font-style: italic;
+            text-transform: capitalize;
+        }
+
+        @media (max-width: 600px) {
+            padding: 10px 20px;
+        }
+    }
+
+    .nav {
+        max-width: 300px;
+        flex: 1;
+        padding: 10px 20px;
+        background: var(--navbar-color);
+        border-radius: 50px;
+        animation: moveLeft 0.5s;
+        position: relative;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        @media (max-width: 650px) {
+            display: none;
+        }
+        .navIcon {
+            padding: 10px;
+            border: 2px solid #d3c3c3;
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            align-items: center;
+            cursor: pointer;
+
+            &.active {
+                border:2px solid rgb(99, 102, 106);
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .icon {
+        display: none;
+
+        @media (max-width: 650px) {
+            display: block;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.navMenu {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    background-color: white;
+    top: 105%;
+    border-radius: 10px;
+    background: var(--nav-menu-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    animation: movedown 1s;
+
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.076);
+        color: white;
+        font-weight: 500;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.291);
+        }
+    }
+
+    label {
+        font-size: calc(1rem - 2px);
+        font-weight: bold;
+    }
+
+    select,
+    input {
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.076);
+        font-weight: 500;
+        transition: all 0.2s;
+        color: white;
+
+        option {
+            color: black;
+        }
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+}
+
+.container.light {
+    h1 {
+        font-weight: bold;
+
+        span {
+            font-weight: '500';
+        }
+    }
+
+    .nav {
+        background: var(--navbar-color);
+
+        div {
+            // border: none;
+
+            &.active {
+                border-color: rgb(99, 102, 106);
+            }
+        }
+    }
+
+    .navMenu {
+        background: var(--nav-menu-color);
+    }
+}
+
+.mobileNav {
+    display: none;
+    position: relative;
+
+    @media (max-width: 650px) {
+        display: block;
+        position: fixed;
+        z-index: 10000;
+        left: 20%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--nav-menu-color);
+        animation: slide 0.3s;
+        overflow: scroll;
+    }
+
+    .mobileNavIcon {
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+    }
+
+    .mobileNavMenu {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+
+        button {
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+            border: 0;
+            outline: 0;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.076);
+            font-weight: 500;
+            transition: all 0.2s;
+            color: white;
+        }
+
+        .navMenu {
+            position: static;
+            background-color: white;
+            border-radius: 10px;
+            background: var(--nav-menu-color);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    }
+}
+
+.ai {
+    position: absolute;
+    right: 0px;
+    z-index: 30;
+    bottom: 0px;
+    cursor: pointer;
+
+    img {
+        width: 100px;
+
+        @media (max-width: 650px) {
+            width: 70px;
+        }
+
+    }
+}
+
+.aiblock {
+    position: absolute;
+    bottom: 130px;
+    border-radius: 20px;
+    right: 80px;
+    width: 40vw;
+    z-index: 30;
+
+    @media (max-width:650px) {
+        width: 60vw;
+        right: 50px;
+    }
+}
+@keyframes slide {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 20%;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(600px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

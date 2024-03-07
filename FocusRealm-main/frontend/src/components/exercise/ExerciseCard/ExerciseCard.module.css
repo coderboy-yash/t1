@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  gap: 30px;
+  width: 35rem;
+}
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column;
+    width: 18rem;
+  }
+}
+.container .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .content h1 {
+  font-size: calc(1rem + 10px);
+}
+.container .content p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(1rem - 4px);
+  line-height: 26px;
+  color: #d1d5f0;
+}
+.container .content > div {
+  width: 70%;
+  margin-top: 10px;
+}
+.container .image {
+  flex: 1;
+}
+.container h1 {
+  font-size: calc(1rem + 4px);
+  color: white;
+  text-align: left;
+}
+.container .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.container .image img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=ExerciseCard.module.css.map */

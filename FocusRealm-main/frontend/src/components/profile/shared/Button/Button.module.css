@@ -1,0 +1,41 @@
+.container {
+  background: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.container.small {
+  width: 60%;
+  margin: auto;
+}
+.container:hover {
+  background: transparent;
+}
+.container.outline {
+  background: transparent;
+}
+.container.outline:hover {
+  background: var(--btn-color);
+}
+.container.circular {
+  border-radius: 100px;
+}
+.container.disable {
+  pointer-events: none;
+}
+.container.noRadius {
+  border-radius: 0;
+}
+.container:disabled {
+  opacity: 50%;
+}
+.container.noEvents {
+  pointer-events: none;
+}/*# sourceMappingURL=Button.module.css.map */

@@ -1,0 +1,35 @@
+.container {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(217, 217, 217, 0.07);
+  -webkit-backdrop-filter: blur(6.5px);
+          backdrop-filter: blur(6.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  animation: moveIn 2000ms;
+}
+.container .wrapper {
+  padding: 2px;
+  background: linear-gradient(180deg, #0c4ca1 0%, #07c3f6 100%);
+  border-radius: 10px;
+}
+.container .wrapper .inside {
+  background: var(--main-color);
+  mix-blend-mode: normal;
+  border-radius: 10px;
+  padding: 50px;
+}
+.container .wrapper .lowmargin {
+  padding: 45px;
+}
+@media (max-width: 650px) {
+  .container .wrapper .lowmargin {
+    padding: 25px;
+  }
+}/*# sourceMappingURL=Popup.module.css.map */

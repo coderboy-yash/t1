@@ -1,0 +1,106 @@
+.container {
+  width: 90%;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 5vh;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.container .gametitle {
+  text-align: center;
+  color: var(--btn-color);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+.container .gamequestion {
+  color: white;
+  text-align: center;
+  background-color: var(--main-color1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.container .game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 50px;
+}
+@media (max-width: 650px) {
+  .container .game {
+    flex-direction: column;
+  }
+}
+.container .game .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  gap: 30px;
+  width: 100%;
+}
+.container .game .image img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .game .image p {
+  font-size: calc(1rem + 4px);
+}
+.container .game .controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.container .game .buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  width: 90%;
+  max-width: 600px;
+}
+@media (max-width: 550px) {
+  .container .game .buttons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.container .result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .result h3 {
+  font-size: calc(1rem + 10px);
+  background-color: var(--btn-color);
+  width: 70%;
+  max-width: 300px;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.container .result h3:hover {
+  background-color: rgb(130, 101, 255);
+}
+.container .result p {
+  color: white;
+  cursor: pointer;
+}
+
+.container.light .gametitle {
+  color: #0d1a2e;
+  border-bottom: 1px solid #0d1a2e;
+}/*# sourceMappingURL=Hangman.module.css.map */
